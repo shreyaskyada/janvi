@@ -171,7 +171,7 @@ const Dashboard = () => {
           <div className={`step1-container`} style={{ minWidth: "100vw" }}>
             <div className="flex flex-col gap-5">
             <h1 className="bday-text text-center">Happy birthday Janudi</h1>
-            <img src="IMG_2446.jpg" className="h-[50vh] w-fit mx-auto rounded-xl" />
+            <img src="IMG_2446.jpg" className="max-h-[50vh] mx-auto rounded-xl" />
             <p className="text-[20px] font-semibold">Aa photo ma jem hase che ne tu aem j aakhi life hasti reje 🌝🌝 (Mst ni lage che 😁)!!</p>
             <p className="text-center">Chal hve right swipe kr bov day chal chal</p>
             </div>
@@ -265,7 +265,7 @@ const Dashboard = () => {
             <h2 className="text-[24px] text-center">🎉 Surprise! 🎉</h2>
             <p className="text-[20px] font-semibold text-center">It's me cutie 🌝</p>
             <p className="text-[20px] font-semibold text-center">Surprise kevu lagyu?? Cute ne? Khbr j che ee to 😂😂</p>
-            <img src="IMG_4176.png" className="rotate-180 rounded-xl mt-7 h-[50vh] w-fit mx-auto" />
+            <img src="IMG_4176.png" className="rotate-180 rounded-xl mt-7 h-[50vh] mx-auto" />
             <p className="mt-4 text-center">Chal pachu swipe right kar fatafat</p>
           </div>
         </div>
