@@ -1,0 +1,123 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  overflow-x: hidden;
+  width: fit-content;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  width: 100vw;
+}
+
+.step1-container {
+  transition: 2s;
+  width: 100vw;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+/* bg-black/40 p-4 rounded-lg */
+
+.card {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.bday-text {
+  font-family: 'Dancing Script', cursive;
+  color: #FFD700;
+  font-size: 2rem;
+}
+
+.button {
+  --y: -1; /* Moved from hover */
+  --x: 1; /* Moved from hover */
+  --rotation: -1; /* Moved from hover */
+  --speed: 0.1; /* Moved from hover */
+  --txt: "Click me! to reveal surpise"; /* Moved from hover */
+  --padding: 1rem 1.25rem;
+  cursor: pointer;
+  padding: var(--padding);
+  color: transparent;
+  font-weight: bold;
+  font-size: 1.25rem;
+  transition: background 0.1s ease;
+  background: hsl(var(--hue), 100%, 40%); /* Moved from hover */
+  outline-color: hsl(var(--hue), 100%, 80%);
+  animation-name: flow-and-shake;
+  animation-duration: calc(var(--speed) * 1s);
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  position: relative;
+}
+
+.button:after {
+  content: var(--txt);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: var(--padding);
+  color: #fff;
+}
+
+.button:active {
+  --speed: 4;
+  --x: 0;
+  --y: 5;
+  --rotation: 0;
+  --txt: "";
+  background: hsl(var(--hue), 100%, 30%);
+}
+
+.button__wrap {
+  position: relative;
+}
+
+.button__shadow {
+  position: absolute;
+  border-radius: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: hsl(0, 10%, 65%);
+  animation: shadow 2s infinite ease-in-out;
+  z-index: -1;
+}
+
+@keyframes shadow {
+  0%, 100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+    transform: scaleX(0.25);
+  }
+}
+
+@keyframes flow-and-shake {
+  0%, 100% {
+    transform: translate(calc(var(--x) * -1%), 0) rotate(calc(var(--rotation) * -1deg));
+  }
+  50% {
+    transform: translate(calc(var(--x) * 1%), calc(var(--y) * 1%)) rotate(calc(var(--rotation) * 1deg));
+  }
+}
+
+
+/* Hides scrollbar for specific elements */
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
