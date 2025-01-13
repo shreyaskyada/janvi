@@ -159,7 +159,7 @@ const Dashboard = () => {
       <div className="step1-container">
         {stepCount === 0 && (
           <TypeAnimation
-            sequence={["Hii Janudi", 500, "Hii Janvi", 1000, "Jay Shree Krishna!", 1000, "Be ready!!", 200, "3", 700, "2", 700, "1"]}
+            sequence={["Hiiee Janudi", 500, "Hiiee Janvi", 1000, "Jay Shree Krishna!", 1000, "Be ready!!", 200, "3", 700, "2", 700, "1"]}
             wrapper="span"
             speed={15}
             cursor={false}
@@ -171,7 +171,8 @@ const Dashboard = () => {
           <div className={`step1-container`} style={{ minWidth: "100vw" }}>
             <div className="flex flex-col gap-5">
             <h1 className="bday-text text-center">Happy birthday Janudi</h1>
-            <img src="IMG_2446.jpg" className="w-full" />
+            <img src="IMG_2446.jpg" className="h-[50vh] w-fit mx-auto rounded-xl" />
+            <p className="text-[20px] font-semibold">Aa photo ma jem hase che ne tu aem j aakhi life hasti reje 🌝🌝 (Mst ni lage che 😁)!!</p>
             <p className="text-center">Chal hve right swipe kr bov day chal chal</p>
             </div>
           </div>
@@ -215,7 +216,7 @@ const Dashboard = () => {
             mari prayer dil thi!! 💙
           </p>
           <p className="text-[18px] mt-2">
-            And tu ek healthy life jive eeni mari ek nankdi eevi but bov important wish che!!!
+            And taru aa new year progressive and healthy jay!!
           </p>
           <p className="text-[18px] mt-2">Chal hve pachu swipe kr ne pagal</p>
         </div>
@@ -252,16 +253,7 @@ const Dashboard = () => {
         <div className="card">
           <p className="text-[20px] font-semibold">Hold tight,</p>
           <p className="text-[20px] font-semibold">
-            Surpise is waiting in next slide ➡️
-          </p>
-        </div>
-      </div>
-
-      <div className="step1-container">
-        <div className="card">
-          <p className="text-[20px] font-semibold">Hold tight,</p>
-          <p className="text-[20px] font-semibold">
-            Surpise is waiting in next slide ➡️
+            Surprise is waiting in next slide ➡️
           </p>
         </div>
       </div>
@@ -272,7 +264,8 @@ const Dashboard = () => {
           <div className="flex flex-col">
             <h2 className="text-[24px] text-center">🎉 Surprise! 🎉</h2>
             <p className="text-[20px] font-semibold text-center">It's me cutie 🌝</p>
-            <img src="IMG_4176.png" className="rotate-180 w-full rounded-xl mt-7" />
+            <p className="text-[20px] font-semibold text-center">Surprise kevu lagyu?? Cute ne? Khbr j che ee to 😂😂</p>
+            <img src="IMG_4176.png" className="rotate-180 rounded-xl mt-7 h-[50vh] w-fit mx-auto" />
             <p className="mt-4 text-center">Chal pachu swipe right kar fatafat</p>
           </div>
         </div>
