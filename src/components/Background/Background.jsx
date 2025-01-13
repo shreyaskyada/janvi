@@ -8,6 +8,7 @@ const namesList = [
   "Non Sense",
   "Janudi",
   "Pagal",
+  "JCB"
 ];
 
 const shuffleArray = (array) => {
